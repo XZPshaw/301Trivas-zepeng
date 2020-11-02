@@ -32,7 +32,7 @@ class CityListTest {
     @Test
     void testShouldFail(){
         CityList cityList = mockCityList();
-        cityList.add(new City("Edmonton","Alberta"));
+        cityList.add(new City("Calgary","Alberta"));
         assertEquals(2, cityList.countCities());
 
     }
