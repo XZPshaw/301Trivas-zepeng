@@ -8,7 +8,7 @@ public class City implements Comparable<City>{
         this.city = city;
         this.province = province;
     }
-
+    
     String getCityName(){
         return this.city;
     }

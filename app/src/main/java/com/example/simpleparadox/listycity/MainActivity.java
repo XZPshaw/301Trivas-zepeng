@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     ListView cityList;
     ArrayAdapter<City> cityAdapter;
     ArrayList<City> cityDataList;
-
     CustomList customList;
 
     @Override
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         String []cities ={"Edmonton", "Vancouver", "Toronto", "Hamilton", "Denver", "Los Angeles"};
         String []provinces = {"AB", "BC", "ON", "ON", "CO", "CA"};
 
-
         cityDataList = new ArrayList<>();
 
         for(int i=0;i<cities.length;i++){
@@ -40,14 +38,6 @@ public class MainActivity extends AppCompatActivity {
         cityAdapter = new CustomList(this, cityDataList);
 
         cityList.setAdapter(cityAdapter);
-
-//        dataList = new ArrayList<>();
-//        dataList.addAll(Arrays.asList(cities));
-//
-//        cityAdapter = new ArrayAdapter<>(this, R.layout.content, dataList);
-//
-//        cityList.setAdapter(cityAdapter);
-
 
 
     }
